@@ -2,32 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold font-sans pb-2 border-b-2 border-b-neutral-100 dark:border-b-neutral-900 text-neutral-600 dark:text-neutral-300;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  @apply text-4xl;
 }
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
+}
+h5 {
+  @apply text-lg;
+}
+h6 {
+  @apply text-base;
+}
+img {
+  @apply rounded-lg;
+}
+body > * ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+body > * ::-webkit-scrollbar-track {
+  @apply bg-neutral-400 dark:bg-neutral-950 rounded;
+}
+body > * ::-webkit-scrollbar-thumb {
+  @apply bg-neutral-600 dark:bg-neutral-700 rounded;
+}
+/* .blog-post {
+  @apply flex flex-col gap-5 font-roboto font-light tracking-wide;
+}
+.blog-post a {
+  @apply text-yellow-600 dark:text-yellow-400 underline;
+}
+.blog-post ol {
+  @apply list-decimal flex flex-col mx-10 gap-2;
+}
+.blog-post ul {
+  @apply flex flex-col mx-10 gap-2 list-disc;
+}
+.blog-post li {
+  @apply list-disc leading-7;
+}
+.blog-post > pre {
+  @apply p-4 bg-neutral-100 dark:bg-neutral-900 text-sm rounded-lg overflow-auto;
+}
+.blog-post > blockquote {
+  @apply p-5 italic font-sans font-light border-l-4 border-l-sky-400 bg-sky-100 dark:bg-sky-900 rounded overflow-auto;
+}
+.blog-post > p > img {
+  @apply my-5 rounded-xl border-2 border-neutral-200 dark:border-neutral-800;
+} */
