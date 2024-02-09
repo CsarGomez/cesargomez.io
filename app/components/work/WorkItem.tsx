@@ -27,7 +27,7 @@ const WorkItem = ({ index, work }: Props) => {
           </p>
         </div>
         <AnchorLink
-          href={`/works/${work.id}`}
+          href={`/work/${work.id}`}
           label={'View details'}
           variant={'read'}
         />
