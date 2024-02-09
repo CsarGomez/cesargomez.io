@@ -49,7 +49,7 @@ body > * ::-webkit-scrollbar-track {
 body > * ::-webkit-scrollbar-thumb {
   @apply bg-neutral-600 dark:bg-neutral-700 rounded;
 }
-/* .blog-post {
+.blog-post {
   @apply flex flex-col gap-5 font-roboto font-light tracking-wide;
 }
 .blog-post a {
@@ -72,4 +72,4 @@ body > * ::-webkit-scrollbar-thumb {
 }
 .blog-post > p > img {
   @apply my-5 rounded-xl border-2 border-neutral-200 dark:border-neutral-800;
-} */
+}
