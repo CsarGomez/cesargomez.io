@@ -20,7 +20,7 @@ const WorkItem = ({ index, work }: Props) => {
           {dayjs(work.date).format('MMM YYYY')}
         </time>
 
-        <div>
+        <div className='px-5'>
           <p className='font-sans font-bold'>{work.title}</p>
           <p className='font-roboto font-light text-neutral-400 '>
             {work.excerpt}
