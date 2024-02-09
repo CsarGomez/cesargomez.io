@@ -4,7 +4,6 @@ import { Roboto_Slab } from 'next/font/google';
 import './globals.css';
 import Header from '@/app/components/header/Header';
 import Footer from '@/app/components/footer/Footer';
-import Providers from './providers';
 
 const roboto_slab = Roboto_Slab({
   subsets: ['latin'],
@@ -27,11 +26,9 @@ export default function RootLayout({
       <body
         className={`${GeistSans.variable} ${roboto_slab.variable} max-w-[90rem] mx-auto px-5 bg-neutral-50 text-neutral-600 dark:bg-neutral-950 dark:text-neutral-400 transition-colors duration-200 ease-in-out`}
       >
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
