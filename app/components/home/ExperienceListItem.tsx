@@ -1,5 +1,5 @@
-import AnchorLink from '../shared/AnchorLink';
-import Pill from '../shared/Pill';
+import AnchorLink from '@/app/components/shared/AnchorLink';
+import Pill from '@/app/components/shared/Pill';
 
 interface Props {
   index: number;

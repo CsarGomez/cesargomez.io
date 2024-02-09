@@ -1,7 +1,7 @@
 'use client';
 
 import { NavigationMenu } from '@/app/constants/constants';
-import NavLink from './NavLink';
+import NavLink from '@/app/components/navbar/NavLink';
 
 const Navbar = () => {
   return (

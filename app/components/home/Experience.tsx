@@ -1,6 +1,6 @@
 import { WorkExperience } from '@/app/constants/constants';
-import AnchorLink from '../shared/AnchorLink';
-import ExperienceListItem from './ExperienceListItem';
+import AnchorLink from '@/app/components/shared/AnchorLink';
+import ExperienceListItem from '@/app/components/home/ExperienceListItem';
 
 export default function Experience() {
   return (

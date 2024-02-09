@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { Roboto_Slab } from 'next/font/google';
 import './globals.css';
-import Header from './components/header/Header';
+import Header from '@/app/components/header/Header';
+import Footer from '@/app/components/footer/Footer';
 
 const roboto_slab = Roboto_Slab({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

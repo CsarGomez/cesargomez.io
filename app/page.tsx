@@ -1,6 +1,6 @@
-import Brief from './components/home/Brief';
-import Experience from './components/home/Experience';
-import Title from './components/home/Title';
+import Brief from '@/app/components/home/Brief';
+import Experience from '@/app/components/home/Experience';
+import Title from '@/app/components/home/Title';
 
 const HomePage = () => {
   return (
