@@ -4,10 +4,10 @@ import Link from 'next/link';
 export default function Title() {
   return (
     <div className='w-full'>
-      <h1 className='text-4xl font-bold border-none'>Cesar Gomez</h1>
+      <h1 className='text-4xl font-bold border-none pb-0'>Cesar Gomez</h1>
       <div className='flex flex-col gap-1'>
         <p className='font-sans text-xl font-thin'>
-          a software developer with love of beating personal beats.
+          A software developer with love of beating personal beats.
         </p>
         <div className='flex items-center gap-5 font-roboto font-light text-xs'>
           <Link

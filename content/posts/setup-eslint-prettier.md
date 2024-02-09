@@ -1,7 +1,6 @@
 ---
 id: '06'
 title: 'How to Setup ESLint and Prettier'
-author: 'Cesar Gomez'
 date: '2022-08-05'
 excerpt: 'How to setup ESLint and Prettier in your VSCode project'
 tags: ['Javascript', 'Vscode']

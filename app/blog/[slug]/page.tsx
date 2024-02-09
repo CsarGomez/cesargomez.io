@@ -18,7 +18,6 @@ const Post = async ({ params }: { params: { slug: string } }) => {
           </div>
         </div>
         <h3 className='pb-0 border-0'>{postData.title}</h3>
-        <p className='font-roboto font-light'>{postData.author}</p>
         <div className='flex items-center flex-wrap gap-2 font-sans font-light text-xs'>
           <p>Tags:</p>
           {postData.tags.map((tag: string) => (

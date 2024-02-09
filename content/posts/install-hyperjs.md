@@ -1,7 +1,6 @@
 ---
 id: '02'
 title: 'How to install and setup Hyper.js (terminal) in macOS'
-author: 'Cesar Gomez'
 date: '2019-10-13'
 excerpt: 'Hyper.js is a terminal emulator builded with web technologies like HTML, CSS and Javascript'
 tags: ['Hyper.js', 'macOS']

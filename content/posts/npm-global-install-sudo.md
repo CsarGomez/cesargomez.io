@@ -1,7 +1,6 @@
 ---
 id: '04'
 title: 'NPM ask sudo for command for global install'
-author: 'Cesar Gomez'
 date: '2021-12-14'
 excerpt: 'if you are trying to do npm global install and its asking for sudo command you may want to fix your permissions'
 tags: ['npm', 'Node.js', 'macOS']

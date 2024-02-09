@@ -1,7 +1,6 @@
 ---
 id: '07'
 title: 'Setup aliases in Vite with TypeScript or JavaScript'
-author: 'Cesar Gomez'
 date: '2023-03-14'
 excerpt: 'How to setup aliases in Vite with TypeScript or JavaScript to use absolute imports in your react projects.'
 tags: ['React', 'JavaScript', 'TypeScript', 'Vite']

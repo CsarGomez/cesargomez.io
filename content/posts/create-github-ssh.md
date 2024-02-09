@@ -1,7 +1,6 @@
 ---
 id: '03'
 title: 'How to Generate an SSH for GitHub'
-author: 'Cesar Gomez'
 date: '2020-08-16'
 excerpt: 'SSH also known as Secure Shell or Secure Socket Shell and usually considered more secure, for basic usage of GitHub'
 tags: ['GitHub', 'macOS']

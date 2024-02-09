@@ -1,7 +1,6 @@
 ---
 id: '01'
 title: 'How to install external ZSH themes in macOS'
-author: 'Cesar Gomez'
 date: '2020-03-27'
 excerpt: 'install external themes in ZSH its a little different than the default themes'
 tags: ['ZSH', 'macOS']

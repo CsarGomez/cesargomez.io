@@ -1,7 +1,6 @@
 ---
 id: '05'
 title: 'Install NVM in macOS'
-author: 'Cesar Gomez'
 date: '2022-04-15'
 excerpt: 'How to install NVM and manage Node.js versions in macOS with NVM'
 tags: ['Node.js']
