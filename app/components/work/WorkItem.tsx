@@ -22,7 +22,7 @@ const WorkItem = ({ index, work }: Props) => {
 
         <div className='px-5'>
           <p className='font-sans font-bold'>{work.title}</p>
-          <p className='font-roboto font-light text-neutral-400 '>
+          <p className='font-roboto font-light text-neutral-400'>
             {work.excerpt}
           </p>
         </div>

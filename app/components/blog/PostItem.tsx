@@ -8,23 +8,24 @@ interface Props {
 
 const PostItem = ({ post }: Props) => {
   return (
-    <article className='flex flex-col rounded'>
-      {/* title + date */}
-      <div className='flex items-end gap-2 border-b border-b-sky-400'>
-        <div className='p-2 bg-sky-400 rounded-t text-neutral-950'>
-          <time className='font-roboto text-xs whitespace-nowrap'>
-            {dayjs(post.date).format('MMM D, YYYY')}
-          </time>
-        </div>
-        <h6 className='pb-0 border-0'>{post.title}</h6>
+    <article
+      key={post.id}
+      className='pb-2 flex flex-col md:flex-row items-start border-b border-neutral-100 dark:border-b-neutral-900'
+    >
+      <div className='w-full md:w-[12%] font-roboto font-thin text-xs text-sky-400'>
+        {dayjs(post.date).format('MMM D, YYYY')}
       </div>
-      {/* content */}
-      <div className='p-5 flex flex-col gap-2 bg-neutral-100 dark:bg-neutral-900 rounded-b'>
-        <p className='font-roboto font-light'>{post.excerpt}</p>
+      <div className='w-full md:w-[88%] flex flex-col gap-3'>
+        <div>
+          <p className='font-bold'>{post.title}</p>
+          <p className='font-roboto font-thin text-neutral-400 text-sm'>
+            {post.excerpt}
+          </p>
+        </div>
         <AnchorLink
           href={`/blog/${post.id}`}
-          label='Read Post'
-          variant='read'
+          label={'Read post'}
+          variant={'read'}
         />
       </div>
     </article>
