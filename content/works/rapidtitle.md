@@ -24,5 +24,6 @@ RapidTitle is an online portal that allows buyers, sellers, lenders, motor vehic
 This project still as work in progress, i had the opportunity to chose the frontend technologies and decided to implement Zustand which i head of many times before and decided to give it a try, i really like it, it's a really simple state management library and it's really easy to implement.
 As i mentioned before this project still in progress and i'm still working on it, i'm really excited to see the final result.
 
-![dashboard](/images/work/rapidtitle/rapidtitle-community.png)
-![dashboard](/images/work/rapidtitle/rapidtitle-trades.png)
+![dashboard](/images/work/rapidtitle/rapidtitle-home_nda.png)
+![dashboard](/images/work/rapidtitle/rapidtitle-community_nda.png)
+![dashboard](/images/work/rapidtitle/rapidtitle-trades_nda.png)
