@@ -1,6 +1,16 @@
+'use client';
+
 import { Navbar } from '@/components/navbar/Navbar';
+import { useTheme } from 'next-themes';
 
 export const Header = () => {
+  const { setTheme, resolvedTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
+
+  const toggleTheme = () => {
+    setTheme(isDark ? 'light' : 'dark');
+  };
+
   return (
     <header className='w-full mx-auto flex h-10 items-center justify-between px-4 md:px-14'>
       <div className='flex items-center gap-1'>
@@ -15,6 +25,7 @@ export const Header = () => {
           type='button'
           aria-label='Switch theme'
           className='flex h-6 w-24 cursor-pointer items-center gap-1 rounded-lg border border-purple-800 bg-purple-200 px-2 text-[0.65rem] font-semibold text-purple-800 dark:border-yellow-800 dark:bg-yellow-200 dark:text-yellow-800'
+          onClick={toggleTheme}
         >
           <span className='relative h-4 w-4'>
             <svg
@@ -24,7 +35,7 @@ export const Header = () => {
               width='16'
               height='16'
               fill='none'
-              className='theme-icon absolute inset-0 scale-75 -rotate-12 opacity-0 transition-all duration-200 ease-out'
+              className='hidden dark:block'
             >
               <rect width='256' height='256' fill='none'></rect>
               <line
@@ -59,7 +70,7 @@ export const Header = () => {
               width='16'
               height='16'
               fill='none'
-              className='theme-icon absolute inset-0 scale-75 rotate-12 opacity-0 transition-all duration-200 ease-out'
+              className='block dark:hidden'
             >
               <rect width='256' height='256' fill='none'></rect>
               <line
@@ -111,8 +122,7 @@ export const Header = () => {
               ></path>
             </svg>
           </span>
-
-          <p id='theme-label'>Dark mode</p>
+          <p>{isDark ? 'Light mode' : 'Dark mode'}</p>
         </button>
       </div>
     </header>
