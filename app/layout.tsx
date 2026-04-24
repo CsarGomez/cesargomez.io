@@ -1,16 +1,23 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Bricolage_Grotesque, Inter, Lustria } from 'next/font/google';
 import '@/app/styles/globals.css';
 import { Header } from '@/components/header/Header';
+import { Footer } from '@/components/footer/Footer';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: '--font-bricolage-grotesque-next',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const inter = Inter({
+  variable: '--font-inter-next',
   subsets: ['latin'],
+});
+
+const lustria = Lustria({
+  variable: '--font-lustria-next',
+  subsets: ['latin'],
+  weight: ['400'],
 });
 
 export const metadata: Metadata = {
@@ -26,11 +33,12 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bricolageGrotesque.variable} ${inter.variable} ${lustria.variable} h-full antialiased`}
     >
-      <body className='min-h-full flex flex-col'>
+      <body className='min-h-full flex flex-col justify-between bg-white text-black dark:bg-black dark:text-white font-inter'>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
