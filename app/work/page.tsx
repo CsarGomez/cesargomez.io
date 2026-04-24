@@ -7,9 +7,15 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <main className='mx-auto flex h-[calc(100dvh-80px)] w-3xl flex-col justify-center gap-4 rounded-lg px-14 py-8'>
-      <h1 className='font-title text-3xl leading-0 font-semibold'>Work</h1>
-      <p>Coming soon...</p>
+    <main className='mx-auto flex md:w-3xl flex-col gap-4 rounded-lg px-14 py-8 font-medium'>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
+        Work
+      </h3>
+      <p>
+        These are products I&apos;ve built and problems I&apos;ve solved. I
+        focus on shipping solutions that are functional, scalable, and actually
+        useful, not just technically interesting.
+      </p>
     </main>
   );
 }

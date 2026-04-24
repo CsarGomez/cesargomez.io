@@ -17,7 +17,7 @@ export default function Home() {
       <p className='font-lustria text-lg text-sky-500'>
         A software developer with love of beating personal beats.
       </p>
-      <h3 className='font-bricolage-grotesque font-extrabold text-gray-400 dark:text-gray-500 underline'>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
         How I Work
       </h3>
       <p>
@@ -28,7 +28,7 @@ export default function Home() {
         without sacrificing quality. In tech, standing still is falling behind,
         so growth is part of my daily routine.
       </p>
-      <h3 className='font-bricolage-grotesque font-extrabold text-gray-400 dark:text-gray-500 underline'>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
         What I Build
       </h3>
       <p>
@@ -38,7 +38,7 @@ export default function Home() {
         businesses, how small decisions shape user experience, and how
         consistency and iteration compound into real results over time.
       </p>
-      <h3 className='font-bricolage-grotesque font-extrabold text-gray-400 dark:text-gray-500 underline'>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
         Beyond Code
       </h3>
       <p>
@@ -46,27 +46,6 @@ export default function Home() {
         court, and spending quality time with my dog and family. That balance
         keeps me focused, creative, and grounded.
       </p>
-      {/* <p>I&apos;m a big believer in lifelong learning.</p>
-      JavaScript is my foundation, but I don&apos;t limit myself to a single
-      stack. I&apos;m constantly learning, experimenting, and adapting, whether
-      that means picking up new tools, improving architecture, or finding better
-      ways to ship faster without sacrificing quality. In tech, standing still
-      is falling behind, so growth is part of my daily routine.
-      <p>
-        I focus on building products that are not only functional, but intuitive
-        and meaningful to the people who use them.
-      </p>
-      <p>
-        Beyond the technical side, I&apos;m deeply interested in how products
-        evolve how ideas become businesses, how small decisions shape user
-        experience, and how consistency and iteration compound into real results
-        over time.
-      </p>
-      <p>
-        Outside of coding, I enjoy playing guitar, competing on the volleyball
-        court, and spending quality time with my dog and family. That balance
-        keeps me focused, creative, and grounded.
-      </p> */}
     </main>
   );
 }
