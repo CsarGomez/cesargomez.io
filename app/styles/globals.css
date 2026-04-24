@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -8,14 +8,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --github-brand-light: #2b3137;
+  --github-brand-dark: #2b3137;
+  --linkedin-brand: #0077b5;
+  --instagram-brand: #e1306c;
+  --x-brand: #000000;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1c1e1f;
+    --foreground: #f3f3f3;
   }
 }
 
