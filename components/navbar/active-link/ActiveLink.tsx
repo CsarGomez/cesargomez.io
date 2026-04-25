@@ -9,11 +9,15 @@ interface Props {
 }
 const ActiveLink = ({ path, label }: Props) => {
   const pathname = usePathname();
+  const isActive =
+    path === '/'
+      ? pathname === '/'
+      : pathname === path || pathname.startsWith(`${path}/`);
 
   return (
     <Link
       href={path}
-      className={` ${pathname === path ? 'text-sky-500' : 'text-black dark:text-white'} font-semibold`}
+      className={` ${isActive ? 'text-sky-500' : 'text-black dark:text-white'} font-semibold`}
     >
       {label}
     </Link>
