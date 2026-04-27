@@ -14,7 +14,7 @@ First open the _~/.oh-my-zsh/themes/_ directory, this is a hidden directory.
 
 To get the [Cobalt2 theme](https://github.com/wesbos/hyperterm-cobalt2-theme) go to the link drag the archive named as cobalt2.zshtheme and drop into the _.oh-my-zsh_ folder
 
-![cobalt2 github](/images/blog/cobalt2-github.png)
+![cobalt2 github](/img/blog/cobalt2-github.png)
 
 Open `ZSH preferences` i use VSCode for that [how to here](https://cesargomez.io/blog/install-HyperJs) and change the line:
 
@@ -40,4 +40,4 @@ Since i use Hyper i need to setup the power fonts in Hyper.js, so open hyper pre
 
 And then add the font
 
-![add power fonts](/images/blog/add-power-font.png)
+![add power fonts](/img/blog/add-power-font.png)

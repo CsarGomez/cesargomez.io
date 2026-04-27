@@ -18,22 +18,26 @@ export default function BlogPage() {
       </h3>
 
       <p>This is where I think out loud.</p>
-      <p>
+      <p className='mb-4'>
         Ideas, lessons, and experiments around building products, writing better
         code, and improving how I work.
       </p>
-      <section className='grid gap-10 sm:grid-cols-2'>
+      <section className='grid gap-10'>
         {posts.map((post) => (
           <Link
             key={post.id}
-            className='flex flex-col gap-4 bg-gray-50 border border-gray-300 rounded-lg p-4 dark:bg-gray-800 dark:border-gray-700 shadow-lg cursor-pointer hover:bg-black hover:text-white hover:border-white dark:hover:bg-white dark:hover:text-black dark:hover:border-black '
+            className='flex flex-col cursor-pointer rounded-lg hover:bg-neutral-50 hover:shadow-lg hover:dark:bg-neutral-800'
             href={`/blog/${post.id}`}
           >
-            <p className='font-lustria text-xs text-sky-500 font-semibold'>
+            <p className='font-lustria text-xs bg-neutral-500 font-semibold py-1 px-4 w-fit rounded-r-md text-white shadow-md'>
               {dayjs(post.date).format('MMM D, YYYY')}
             </p>
-            <h6 className='font-bricolage-grotesque font-bold'>{post.title}</h6>
-            <p className='text-xs'>{post.excerpt}</p>
+            <section className='py-2 px-4 flex flex-col gap-1'>
+              <h6 className='font-bricolage-grotesque font-bold text-neutral-400 dark:text-neutral-500'>
+                {post.title}
+              </h6>
+              <p className='text-xs'>{post.excerpt}</p>
+            </section>
           </Link>
         ))}
       </section>

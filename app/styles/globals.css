@@ -14,3 +14,33 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* blog post styles */
+
+.blog-post h4 {
+  @apply font-bricolage-grotesque font-extrabold text-2xl text-gray-400 dark:text-gray-500 underline;
+}
+.blog-post h3 {
+  @apply font-bricolage-grotesque font-extrabold text-3xl text-gray-400 dark:text-gray-500 underline;
+}
+.blog-post a {
+  @apply text-yellow-600 dark:text-yellow-400 underline;
+}
+.blog-post ol {
+  @apply list-decimal flex flex-col mx-10 gap-2;
+}
+.blog-post ul {
+  @apply flex flex-col mx-10 gap-2 list-disc;
+}
+.blog-post li {
+  @apply list-disc leading-7;
+}
+.blog-post > pre {
+  @apply px-4 py-2 bg-neutral-200 text-black dark:bg-neutral-800 dark:text-white text-sm rounded-lg overflow-auto;
+}
+.blog-post > blockquote {
+  @apply p-5 font-lustria font-light border-l-4 border-l-sky-500 bg-neutral-50 dark:bg-neutral-900 text-black dark:text-white rounded overflow-auto;
+}
+.blog-post > p > img {
+  @apply my-5 rounded-xl border-2 border-neutral-200 dark:border-neutral-800;
+}

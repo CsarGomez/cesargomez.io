@@ -108,7 +108,7 @@ We can improve this by install the [ESLint extension for VSCode](https://marketp
 
 If you are using the ESLint extension, it will start to highlight the errors in your code, in this case is because the _import React from 'react'_ is missing, but since im in next.js is no needed, even on Vite doesn't needed as well.
 
-![eslint error](/images/blog/eslint.png)
+![eslint error](/img/blog/eslint.png)
 
 In this cases we have to options:
 
@@ -119,7 +119,7 @@ In this cases we have to options:
 
 You just need to put the cursor on the error and it will show you a box dialog with an option called _Quick Fix_, this option will show you how to fix it
 
-![eslint fix](/images/blog/eslint-scope.png)
+![eslint fix](/img/blog/eslint-scope.png)
 
 **Modify the config file**
 
