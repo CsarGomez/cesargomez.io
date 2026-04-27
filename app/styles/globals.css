@@ -12,3 +12,5 @@
   --font-inter: var(--font-inter-next);
   --font-lustria: var(--font-lustria-next);
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
