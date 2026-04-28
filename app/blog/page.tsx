@@ -22,11 +22,12 @@ export default function BlogPage() {
         Ideas, lessons, and experiments around building products, writing better
         code, and improving how I work.
       </p>
+
       <section className='grid gap-10'>
         {posts.map((post) => (
           <Link
             key={post.id}
-            className='flex flex-col cursor-pointer rounded-lg hover:bg-neutral-50 hover:shadow-lg hover:dark:bg-neutral-800'
+            className='flex flex-col cursor-pointer hover:bg-[#ffffff] hover:dark:bg-neutral-800 border-l border-l-neutral-300 dark:border-l-neutral-700 hover:rounded-lg hover:border-l-transparent'
             href={`/blog/${post.id}`}
           >
             <p className='font-lustria text-xs bg-neutral-500 font-semibold py-1 px-4 w-fit rounded-r-md text-white shadow-md'>
@@ -37,6 +38,16 @@ export default function BlogPage() {
                 {post.title}
               </h6>
               <p className='text-xs'>{post.excerpt}</p>
+            </section>
+            <section className='flex gap-2 mb-4 pl-4'>
+              {post.tags.map((tag: string) => (
+                <span
+                  key={tag}
+                  className='inline-flex items-center rounded-md bg-sky-50 px-2 py-1 text-xs font-medium text-sky-500 inset-ring inset-ring-sky-700/10 dark:bg-sky-400/10 dark:text-sky-400 dark:inset-ring-sky-400/30'
+                >
+                  {tag}
+                </span>
+              ))}
             </section>
           </Link>
         ))}
