@@ -8,8 +8,8 @@ const NAVIGATION_LINKS = [
   },
   {
     id: 1,
-    name: 'Work',
-    href: '/work',
+    name: 'Projects',
+    href: '/projects',
   },
   {
     id: 2,
