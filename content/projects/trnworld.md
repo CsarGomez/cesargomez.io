@@ -23,5 +23,5 @@ This project still in progress and its being developed by [Neurotic](https://www
 I worked on this project as a full-stack developer rounded by an awesome team, i learn a lot form they trough to the feedback they gave me which i think really help me to improve my skills as a developer.  
 On the other side i have the opportunity to practice and learn some technologies like GraphQL, Firebase and React Native, which I learned before but i never had the opportunity to use it in a real project.
 
-![neurotic](/images/work/trn/trn-analytics.png)
-![neurotic](/images/work/trn/trn-polls.png)
+![neurotic](/img/projects/trn/trn-analytics.png)
+![neurotic](/img/projects/trn/trn-polls.png)

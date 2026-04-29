@@ -3,7 +3,7 @@ import profile_picture from '@/app/assets/img/me.png';
 
 export default function Home() {
   return (
-    <main className='mx-auto flex md:w-3xl flex-col justify-center gap-4 rounded-lg px-14 py-8 font-medium'>
+    <main className='mx-auto px-8 md:px-14 py-8 flex md:w-3xl flex-col justify-center gap-4 rounded-lg font-medium'>
       <Image
         src={profile_picture}
         alt='me'

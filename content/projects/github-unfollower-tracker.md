@@ -65,4 +65,4 @@ function getUnfollowers(firstArray = [], secondArray = [], arrayCopy = []) {
 export { getUnfollowers };
 ```
 
-![unfollowers image](/images/work/github-unfollowers/github-followers-tracker-search.png)
+![unfollowers image](/img/projects/github-unfollowers/github-followers-tracker-search.png)

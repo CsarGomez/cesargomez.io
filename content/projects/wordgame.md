@@ -16,5 +16,5 @@ I have to say that i really enjoyed this project, is always fun to work React an
 Great challenge to practice React and TypeScript, its always good to practice with this kind of projects to keep the basic concepts fresh and includes new things like toast components.  
 At the end you can come with a nice project.
 
-![word](/images/work/word-game/wordgame-play.png)
-![word](/images/work/word-game/wordgame-done.png)
+![word](/img/projects/word-game/wordgame-play.png)
+![word](/img/projects/word-game/wordgame-done.png)

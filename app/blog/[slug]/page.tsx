@@ -10,7 +10,7 @@ const BlogPostPage = async ({
   const { slug } = await params;
   const postData = await getPostData(slug);
   return (
-    <section className='mx-auto flex md:w-3xl flex-col justify-center gap-4 rounded-lg px-14 py-8 font-medium'>
+    <section className='mx-auto px-8 md:px-14 py-8 flex md:w-3xl flex-col justify-center gap-4 rounded-lg font-medium'>
       <section className='space-y-2'>
         <Link
           href='/blog'
@@ -22,7 +22,7 @@ const BlogPostPage = async ({
         <h1 className='mt-4 font-bricolage-grotesque font-extrabold text-2xl text-black dark:text-white underline'>
           {postData.title}
         </h1>
-        <section className='flex gap-2 mb-4'>
+        <section className='flex flex-wrap gap-2 mb-4'>
           {postData.tags.map((tag: string) => (
             <span
               key={tag}

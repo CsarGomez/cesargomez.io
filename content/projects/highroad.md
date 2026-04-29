@@ -19,5 +19,5 @@ Regards the backend was good to get in touch with C# and learn the basic concept
 
 I know that they did a bit of changes after we finish the project, but i think that the main idea is still there.
 
-![dashboard](/images/work/highroad/highroad-dashboard.png)
-![dashboard](/images/work/highroad/highroad-offerx-dashboard.png)
+![dashboard](/img/projects/highroad/highroad-dashboard.png)
+![dashboard](/img/projects/highroad/highroad-offerx-dashboard.png)
