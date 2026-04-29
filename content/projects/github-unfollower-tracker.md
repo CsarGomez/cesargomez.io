@@ -1,6 +1,6 @@
 ---
 title: 'GitHub unfollowers tracker'
-image: '/images/work/github-unfollowers/github-followers-tracker-index.png'
+image: '/img/projects/github-unfollowers/github-followers-tracker-index.png'
 date: '2022-08-15'
 excerpt: 'A simple project that allows you check who is unfollowed you and who you do not follow back'
 stack: ['React', 'Styled Components', 'Vercel']

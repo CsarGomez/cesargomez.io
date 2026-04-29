@@ -1,6 +1,6 @@
 ---
 title: 'TRN - World'
-image: '/images/work/trn/trn-create-account.png'
+image: '/img/projects/trn/trn-create-account.png'
 date: '2023-06-22'
 excerpt: 'An online platform launched by The Recruitment Network.'
 stack:

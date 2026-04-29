@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
         Projects
       </h3>
-      <p>
+      <p className='mb-4'>
         These are products I&apos;ve built and problems I&apos;ve solved. I
         focus on shipping solutions that are functional, scalable, and actually
         useful, not just technically interesting.
@@ -24,20 +24,22 @@ export default function ProjectsPage() {
         {projects.map((project) => (
           <Link
             key={project.id}
-            className='rounded-lg bg-[#ffffff]  shadow-lg'
+            className='group rounded-lg border border-transparent hover:border-neutral-200 dark:hover:border-neutral-700 hover:bg-[#ffffff] hover:dark:bg-neutral-800 transition-all duration-300'
             href={`/projects/${project.id}`}
           >
             <Image
-              src={'/img/projects/dealerpath/dealerpath-home_nda.png'}
+              src={project.image}
               alt='project image'
-              width={500}
-              height={300}
-              className='rounded-lg'
+              width={311}
+              height={128}
+              className='rounded-t-lg w-77.75 h-32 object-cover object-top'
             />
-            <h6 className='p-2 font-bricolage-grotesque font-bold text-neutral-400 dark:text-neutral-500'>
-              {project.title}
-            </h6>
-            <p className='p-2 text-xs'>{project.excerpt}</p>
+            <section className='flex flex-col rounded-b-lg gap-1 py-2 px-1 group-hover:px-4 group-hover:bg-[#ffffff] dark:group-hover:bg-neutral-800   transition-all duration-300'>
+              <h6 className='font-bricolage-grotesque font-bold text-neutral-400 dark:text-neutral-500'>
+                {project.title}
+              </h6>
+              <p className='text-xs'>{project.excerpt}</p>
+            </section>
           </Link>
         ))}
       </section>

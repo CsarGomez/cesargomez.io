@@ -1,6 +1,6 @@
 ---
 title: 'RapidTitle'
-image: '/images/work/rapidtitle/rapidtitle-home.png'
+image: '/img/projects/rapidtitle/rapidtitle-home.png'
 date: '2023-08-02'
 excerpt: 'Leverages an intelligent API platform that interfaces with all titling participants and rapidly completes the process.'
 stack:

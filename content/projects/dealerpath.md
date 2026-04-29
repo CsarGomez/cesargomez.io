@@ -1,6 +1,6 @@
 ---
 title: 'DealerPath'
-image: '/images/work/dealerpath/dealerpath-index.png'
+image: '/img/projects/dealerpath/dealerpath-index.png'
 date: '2021-11-05'
 excerpt: 'A revolutionary product that shines a spotlight on how your dealership works with its vendors.'
 stack: ['JavaScript', 'HTML', 'CSS', 'Firebase']

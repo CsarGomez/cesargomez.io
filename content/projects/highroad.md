@@ -1,6 +1,6 @@
 ---
 title: 'Offer X from Highroad'
-image: '/images/work/highroad/highroad-index.png'
+image: '/img/projects/highroad/highroad-index.png'
 date: '2022-12-14'
 excerpt: 'Is kind of an automotive matchmakers.'
 stack: ['React', 'C#', 'Postgres']

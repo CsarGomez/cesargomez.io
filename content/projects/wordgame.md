@@ -1,6 +1,6 @@
 ---
 title: 'Word Game'
-image: '/images/work/word-game/wordgame-index.png'
+image: '/img/projects/word-game/wordgame-index.png'
 date: '2023-06-24'
 excerpt: 'Guess the word in six intents.'
 stack: ['React', 'TypeScript', 'Vercel']
