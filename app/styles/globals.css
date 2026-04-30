@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-black: #1c1e1f;
+  --color-white: #f3f3f3;
+  --github-brand-light: #2b3137;
+  --github-brand-dark: #2b3137;
+  --linkedin-brand: #0077b5;
+  --instagram-brand: #e1306c;
+  --x-brand: #000000;
+  --font-bricolage-grotesque: var(--font-bricolage-grotesque-next);
+  --font-inter: var(--font-inter-next);
+  --font-lustria: var(--font-lustria-next);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* blog post styles */
+
+.blog-post h4 {
+  @apply font-bricolage-grotesque font-extrabold text-2xl text-gray-400 dark:text-gray-500 underline;
+}
+.blog-post h3 {
+  @apply font-bricolage-grotesque font-extrabold text-3xl text-gray-400 dark:text-gray-500 underline;
+}
+.blog-post a {
+  @apply text-sky-500 underline;
+}
+.blog-post ol {
+  @apply list-decimal flex flex-col gap-2;
+}
+.blog-post ul {
+  @apply flex flex-col gap-2 list-disc;
+}
+.blog-post li {
+  @apply list-disc ml-4;
+}
+.blog-post > pre {
+  @apply max-w-[calc(100vw-4rem)] p-2 bg-neutral-200 text-black dark:bg-neutral-800 dark:text-white text-sm rounded-lg overflow-auto;
+}
+.blog-post > blockquote {
+  @apply p-5 font-lustria font-light border-l-4 border-l-sky-500 bg-neutral-50 dark:bg-neutral-900 text-black dark:text-white rounded overflow-auto;
+}
+.blog-post > p > img {
+  @apply my-5 rounded-xl border-2 border-neutral-200 dark:border-neutral-800;
+}

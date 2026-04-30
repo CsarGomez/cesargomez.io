@@ -1,65 +1,51 @@
-import Image from "next/image";
+import Image from 'next/image';
+import profile_picture from '@/app/assets/img/me.png';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className='mx-auto px-8 md:px-14 py-8 flex md:w-3xl flex-col justify-center gap-4 rounded-lg font-medium'>
+      <Image
+        src={profile_picture}
+        alt='me'
+        className='h-32 w-32 rounded-full border border-gray-600 object-cover dark:border-gray-300'
+        loading='eager'
+      />
+      <p>Hi !.</p>
+      <h1 className='font-bricolage-grotesque text-3xl leading-0 font-semibold'>
+        I&apos;m Cesar Gomez
+      </h1>
+      <p className='font-lustria text-lg text-sky-500'>
+        A software developer with love of beating personal beats.
+      </p>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
+        How I Work
+      </h3>
+      <p>
+        I strongly believe in lifelong learning. JavaScript is my foundation,
+        but I don&apos;t limit myself to a single stack. I&apos;m constantly
+        learning, experimenting, and adapting, whether that means adopting new
+        tools, improving architecture, or finding better ways to ship faster
+        without sacrificing quality. In tech, standing still is falling behind,
+        so growth is part of my daily routine.
+      </p>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
+        What I Build
+      </h3>
+      <p>
+        I focus on building products that are not only functional, but intuitive
+        and meaningful to the people who use them. Beyond the technical side,
+        I&apos;m deeply interested in how products evolve—how ideas become
+        businesses, how small decisions shape user experience, and how
+        consistency and iteration compound into real results over time.
+      </p>
+      <h3 className='font-bricolage-grotesque font-extrabold text-xl text-gray-400 dark:text-gray-500 underline'>
+        Beyond Code
+      </h3>
+      <p>
+        Outside of coding, I enjoy playing guitar, competing on the volleyball
+        court, and spending quality time with my dog and family. That balance
+        keeps me focused, creative, and grounded.
+      </p>
+    </main>
   );
 }
