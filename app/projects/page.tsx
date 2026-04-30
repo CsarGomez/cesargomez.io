@@ -27,13 +27,16 @@ export default function ProjectsPage() {
             className='group rounded-lg border border-transparent hover:border-neutral-200 dark:hover:border-neutral-700 hover:bg-[#ffffff] hover:dark:bg-neutral-800 transition-all duration-300'
             href={`/projects/${project.id}`}
           >
-            <Image
-              src={project.image}
-              alt='project image'
-              width={311}
-              height={128}
-              className='rounded-t-lg w-77.75 h-32 object-cover object-top'
-            />
+            <div className='relative rounded-t-lg h-32 w-full overflow-hidden'>
+              <Image
+                src={project.image}
+                alt='project image'
+                fill
+                loading='eager'
+                sizes='(max-width: 640px) 100vw, 50vw'
+                className='object-cover object-top'
+              />
+            </div>
             <section className='flex flex-col rounded-b-lg gap-1 py-2 px-1 group-hover:px-4 group-hover:bg-[#ffffff] dark:group-hover:bg-neutral-800   transition-all duration-300'>
               <h6 className='font-bricolage-grotesque font-bold text-neutral-400 dark:text-neutral-500'>
                 {project.title}
